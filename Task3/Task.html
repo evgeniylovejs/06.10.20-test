@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Task 3</title> 
-  </head>
-  <body>
-    <!-- Create static HTML and CSS of one of the rows in mockup.png.
+    <head>
+        <meta charset="utf-8" />
+        <title>Task 3</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                padding: 20px;
+                background-color: #fdfbfa;
+            }
+            .currency {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 5px 10px 15px;
+                width: 400px;
+                height: 60px;
+                box-shadow: 0px 0px 3px 0px rgba(148, 148, 148, 0.75);
+                border-radius: 3px;
+                color: #000000;
+            }
+            .description__value_up {
+                color: #3ab288;
+            }
+
+            .actions {
+                display: flex;
+            }
+            .actions > div:not(:first-child) {
+                margin-left: 5px;
+            }
+            .button {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                padding: 5px;
+                width: 110px;
+                height: 40px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .button__label {
+                font-size: 12px;
+            }
+            .button__price {
+                font-weight: 700;
+            }
+            .button_pending {
+                background-color: #fcd758;
+                color: #000000;
+            }
+            .button_up {
+                background-color: #dbf1e9;
+                color: #3ab288;
+            }
+            .more {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Create static HTML and CSS of one of the rows in mockup.png.
       The addition of hover states with transitions is encouraged.
       Note: do not worry about matching the font. -->
-  </body>
+
+        <div class="currency">
+            <div class="description">
+                <div class="description__label">ABC</div>
+                <div class="description__value description__value_up">
+                    -67.23 (-18%)
+                </div>
+            </div>
+            <div class="actions">
+                <div class="button button_pending">
+                    <div class="button__label">sell</div>
+                    <div class="button__price">22.24</div>
+                </div>
+                <div class="button button_up">
+                    <div class="button__label">buy</div>
+                    <div class="button__price">22.24</div>
+                </div>
+                <div class="more">
+                    <span>&#8942;</span>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
